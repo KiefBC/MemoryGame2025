@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var current = 0
     var body: some View {
         HStack {
+            // Left Button
             Button(action: {
                 current = (current - 1 + theSun.count) % theSun.count
             }) {
